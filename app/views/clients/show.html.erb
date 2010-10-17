@@ -1,0 +1,36 @@
+<% content_for :title do %>Client details<% end %> 
+
+
+<p>
+  <b>Surname:</b>
+  <%=h @client.surname %>
+</p>
+
+<p>
+  <b>Forename:</b>
+  <%=h @client.forename %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%=h @client.email %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%=h @client.phone %>
+</p>
+
+<p>
+  <b>Mobile:</b>
+  <%=h @client.mobile %>
+</p>
+
+<p>
+  <b>Company:</b>
+  <%=h @company.name %>
+</p>
+
+
+<%= link_to 'Edit', edit_client_path(@client) %> |
+<%= link_to 'Back', clients_path %>
